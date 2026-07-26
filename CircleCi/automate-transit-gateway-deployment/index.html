@@ -10,31 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://github.com/Mohamed-Eleraki/DevOps-Kitchen-Workshop/azure/">
+        <link rel="canonical" href="https://github.com/Mohamed-Eleraki/DevOps-Kitchen-Workshop/CircleCi/automate-transit-gateway-deployment/">
       
       
-        <link rel="prev" href="../GCP/master-container-deployment/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="az-basic-networking/">
+        <link rel="next" href="../highly-available-design-deployment/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Overview - DevOps-Kitchen-Workshops</title>
+        <title>Automate TGW Deployment - DevOps-Kitchen-Workshops</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,11 +53,11 @@
       
     
     
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#azure-overview" class="md-skip">
+        <a href="#automate-transit-gateway-deployment" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="DevOps-Kitchen-Workshops" class="md-header__button md-logo" aria-label="DevOps-Kitchen-Workshops" data-md-component="logo">
+    <a href="../.." title="DevOps-Kitchen-Workshops" class="md-header__button md-logo" aria-label="DevOps-Kitchen-Workshops" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Automate TGW Deployment
             
           </span>
         </div>
@@ -250,7 +250,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="DevOps-Kitchen-Workshops" class="md-nav__button md-logo" aria-label="DevOps-Kitchen-Workshops" data-md-component="logo">
+    <a href="../.." title="DevOps-Kitchen-Workshops" class="md-nav__button md-logo" aria-label="DevOps-Kitchen-Workshops" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -280,7 +280,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -410,7 +410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/" class="md-nav__link">
+      <a href="../../aws/" class="md-nav__link">
         
   
   
@@ -438,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/warm-up/" class="md-nav__link">
+      <a href="../../aws/warm-up/" class="md-nav__link">
         
   
   
@@ -466,7 +466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/s3-bucket-disable-acl/" class="md-nav__link">
+      <a href="../../aws/s3-bucket-disable-acl/" class="md-nav__link">
         
   
   
@@ -494,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/s3-bucket-lifecycle/" class="md-nav__link">
+      <a href="../../aws/s3-bucket-lifecycle/" class="md-nav__link">
         
   
   
@@ -522,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/s3-bucket-conditional-access-policy/" class="md-nav__link">
+      <a href="../../aws/s3-bucket-conditional-access-policy/" class="md-nav__link">
         
   
   
@@ -550,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/s3-bucket-object-encryption/" class="md-nav__link">
+      <a href="../../aws/s3-bucket-object-encryption/" class="md-nav__link">
         
   
   
@@ -578,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/s3-bucket-access-policy-cli-comm/" class="md-nav__link">
+      <a href="../../aws/s3-bucket-access-policy-cli-comm/" class="md-nav__link">
         
   
   
@@ -606,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/s3-bucket-vpc-endpoint/" class="md-nav__link">
+      <a href="../../aws/s3-bucket-vpc-endpoint/" class="md-nav__link">
         
   
   
@@ -634,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/single-rds-deployment/" class="md-nav__link">
+      <a href="../../aws/single-rds-deployment/" class="md-nav__link">
         
   
   
@@ -662,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/multi-az-rds-deployment/" class="md-nav__link">
+      <a href="../../aws/multi-az-rds-deployment/" class="md-nav__link">
         
   
   
@@ -690,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/advanced-multi-az-rds-deployment/" class="md-nav__link">
+      <a href="../../aws/advanced-multi-az-rds-deployment/" class="md-nav__link">
         
   
   
@@ -718,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/lambda/" class="md-nav__link">
+      <a href="../../aws/lambda/" class="md-nav__link">
         
   
   
@@ -746,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/lambda-invoke-ssm-document/" class="md-nav__link">
+      <a href="../../aws/lambda-invoke-ssm-document/" class="md-nav__link">
         
   
   
@@ -774,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/lambda-url-invoking/" class="md-nav__link">
+      <a href="../../aws/lambda-url-invoking/" class="md-nav__link">
         
   
   
@@ -802,7 +802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/aws-backend-hcp/" class="md-nav__link">
+      <a href="../../aws/aws-backend-hcp/" class="md-nav__link">
         
   
   
@@ -830,7 +830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/devsecops-checkov/" class="md-nav__link">
+      <a href="../../aws/devsecops-checkov/" class="md-nav__link">
         
   
   
@@ -863,6 +863,8 @@
                 
   
   
+    
+  
   
   
     
@@ -872,11 +874,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -897,7 +899,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -915,7 +917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../CircleCi/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -940,10 +942,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../CircleCi/automate-transit-gateway-deployment/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automate TGW Deployment
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -959,6 +988,54 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#week_eleven-_-_-twelve-automate-transit-gateway-deployment-utilizing-circleci-cicd-terraform-iac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        #week_eleven _ &amp; _ Twelve - Automate Transit gateway deployment utilizing CircleCI CI/CD &amp; Terraform IaC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="#week_eleven _ &amp; _ Twelve - Automate Transit gateway deployment utilizing CircleCI CI/CD &amp; Terraform IaC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -971,7 +1048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../CircleCi/highly-available-design-deployment/" class="md-nav__link">
+      <a href="../highly-available-design-deployment/" class="md-nav__link">
         
   
   
@@ -1056,7 +1133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-python-boto3/" class="md-nav__link">
+      <a href="../../aws-python-boto3/" class="md-nav__link">
         
   
   
@@ -1084,7 +1161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-python-boto3/fetching-aws-resource-details/" class="md-nav__link">
+      <a href="../../aws-python-boto3/fetching-aws-resource-details/" class="md-nav__link">
         
   
   
@@ -1112,7 +1189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-python-boto3/s3-calls/" class="md-nav__link">
+      <a href="../../aws-python-boto3/s3-calls/" class="md-nav__link">
         
   
   
@@ -1140,7 +1217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-python-boto3/python-to-terraform/" class="md-nav__link">
+      <a href="../../aws-python-boto3/python-to-terraform/" class="md-nav__link">
         
   
   
@@ -1168,7 +1245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws-python-boto3/AWS-Python-Package-PyPi/" class="md-nav__link">
+      <a href="../../aws-python-boto3/AWS-Python-Package-PyPi/" class="md-nav__link">
         
   
   
@@ -1253,7 +1330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../GCP/" class="md-nav__link">
+      <a href="../../GCP/" class="md-nav__link">
         
   
   
@@ -1281,7 +1358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../GCP/master-container-deployment/" class="md-nav__link">
+      <a href="../../GCP/master-container-deployment/" class="md-nav__link">
         
   
   
@@ -1314,8 +1391,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1325,11 +1400,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
         
           
           <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -1350,7 +1425,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1365,37 +1440,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../azure/" class="md-nav__link">
         
   
   
@@ -1411,37 +1459,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#whats-inside" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What’s inside
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1454,7 +1471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="az-basic-networking/" class="md-nav__link">
+      <a href="../../azure/az-basic-networking/" class="md-nav__link">
         
   
   
@@ -1482,7 +1499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="az-devops-branch-policy-security/" class="md-nav__link">
+      <a href="../../azure/az-devops-branch-policy-security/" class="md-nav__link">
         
   
   
@@ -1510,7 +1527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="az-devops-environment/" class="md-nav__link">
+      <a href="../../azure/az-devops-environment/" class="md-nav__link">
         
   
   
@@ -1573,13 +1590,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#whats-inside" class="md-nav__link">
+  <a href="#week_eleven-_-_-twelve-automate-transit-gateway-deployment-utilizing-circleci-cicd-terraform-iac" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What’s inside
+        #week_eleven _ &amp; _ Twelve - Automate Transit gateway deployment utilizing CircleCI CI/CD &amp; Terraform IaC
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="#week_eleven _ &amp; _ Twelve - Automate Transit gateway deployment utilizing CircleCI CI/CD &amp; Terraform IaC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1603,14 +1637,69 @@
   
 
 
-<h1 id="azure-overview">Azure Overview</h1>
-<p>Welcome to the Azure section of DevOps Kitchen Workshop.</p>
-<p>This section currently contains community lab content and will be expanded with Azure guides and network workshops.</p>
-<h2 id="whats-inside">What’s inside</h2>
-<ul>
-<li>Azure lab examples</li>
+<h1 id="automate-transit-gateway-deployment">Automate Transit gateway deployment</h1>
+<h2 id="week_eleven-_-_-twelve-automate-transit-gateway-deployment-utilizing-circleci-cicd-terraform-iac"><em>#week_eleven _ &amp; _ Twelve - Automate Transit gateway deployment utilizing CircleCI CI/CD &amp; Terraform IaC</em></h2>
+<p><br></p>
+<p><strong><em>duration: 2 weeks</em></strong>
+<br><br></p>
+<p>ForgTech company wanna test your ability to type down a clean code by Deploying the structure of resources. This will help you to build a
+good reputation.</p>
+<p>The FrogTech Cloud Network team requested you to provision a transit gateway based on AWS Best Practice as follows:</p>
+<ol>
+<li>Deploy VPC_1 and VPC_2 including Private subnets and ec2 machines for traffic testing.</li>
+<li>Deploy VPC_3 including public subnet.</li>
+<li>Deploy Transit gateway The manage the internet traffic flow-driven from/to The Private subnets to The Public subnet.
+<br><br></li>
+</ol>
+<p>By following The ForgTech deployment policy, you should deliver this deployment in an automated pipeline using CircleCI and follow the
+DevOps Team pipeline structure standards as The Pipeline stages should be as follows:</p>
+<ol>
+<li>Preparation stage: This includes the installation and preparation steps <em>(i.e. install AWS CLI, Terraform, and Terraform Initialization)</em> the
+    installation must be done by Commands map.</li>
+<li>Plan Stage: This includes the terraform validation and plan commands; The plan must done by using the output file <em>(i.e. tfplan_tgw file,)</em>
+    <em>and</em> Then Saving the output plan file using CircleCI workspace.</li>
+<li>Manual approval: Pause the pipeline until Reviewed &amp; Approved by the checker engineer.</li>
+<li>Terraform apply: This includes attaching the output plan saved file in the plan stage and then Starting provision resources.
+    the</li>
+</ol>
+<p>After provisioning the required Resources, Check The deployed EC2 machines in the private subnet’s internet accessibility using the
+package manager command:</p>
+<pre><code class="language-bash">dnf search httpd
+</code></pre>
+<p><br></p>
+<p>Consider the below requirements specifications.</p>
+<ol>
+<li>Resources must be created at the us-east-1 region.</li>
+<li>Store state file backend into HCP.</li>
+<li>Resources must have common tags combination as below:</li>
+<li>Common tags:<ul>
+<li>Key: “Environment”, Value: “terraformChamps”</li>
+<li>Key: “Owner”, Value: &lt;“Your_first_name“&gt;
+<br><br></li>
 </ul>
-<p>Check back soon for more Azure content and walkthroughs.</p>
+</li>
+</ol>
+<p><strong>Bonus</strong></p>
+<ol>
+<li>Build an Architecture diagram of the deployment resources.</li>
+<li>Build a personal document consisting of what you learn with deep details and resources <em>i.e. this will assist you to get back and refresh</em>
+    <em>your knowledge later</em></li>
+<li>Append an extra step command of the Plan stage reviewing specific parts of attributes using jq command.</li>
+<li>Crafting multiple HCP workspaces.
+<br></li>
+</ol>
+<p><br></p>
+<h3 id="references"><strong>References:</strong></h3>
+<ul>
+<li><a href="https://docs.aws.amazon.com/vpc/latest/tgw/how-transit-gateways-work.html#transit-gateway-nat-igw-overview">Example: Centralized outbound routing to the internet</a></li>
+<li><a href="https://circleci.com/docs/reference/configuration-reference/#commands">CircleCI - Commands map</a></li>
+<li><a href="https://github.com/Mohamed-Eleraki/terraform/blob/main/buildspec.yml">jq code example</a></li>
+<li><a href="https://stackoverflow.com/questions/59079708/how-to-use-jq-to-extract-a-particular-field-from-a-terraform-state-file">jq command example</a></li>
+<li><a href="https://github.com/Mohamed-Eleraki/terraform/blob/circleci-project-setup/.circleci/config.yml">CircleCI pipeline sample</a></li>
+<li><a href="https://mohamed-eleraky.hashnode.dev/aws-transitgateway-terrafrom-project-02">Transit gateway Article</a></li>
+<li><a href="https://github.com/Mohamed-Eleraki/terraform/tree/main/AWS_Demo/05-Article2-TransitGateway">Transit gateway code sample</a></li>
+<li><a href="https://www.youtube.com/watch?v=x0pSa_M9WSM">Transit gateway online session</a></li>
+</ul>
 
 
 
@@ -1699,10 +1788,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.sidebar", "navigation.collapse", "navigation.autoCollapsed", "navigation.top", "navigation.tracking", "search.suggest", "search.highlight", "header.autohide", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.sidebar", "navigation.collapse", "navigation.autoCollapsed", "navigation.top", "navigation.tracking", "search.suggest", "search.highlight", "header.autohide", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
